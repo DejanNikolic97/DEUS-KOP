@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DEUS-KOP — Profesionalni zemljani radovi</title>
+  <meta name="description" content="DEUS-KOP iz Perleza — iskopa kanala, jama, bazena, temelja, rušenja, odvoz šuta i transport. Kontakt: 060/144-8720" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home"><img src="logo_bager.png" alt="DEUS-KOP logo" class="brand-logo"><span>DEUS-KOP</span></a>
+      <ul class="nav-links" aria-label="Glavni meni">
+        <li><a href="#services">Usluge</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#map">Lokacija</a></li>
+      </ul>
+      <a class="cta-btn" href="#contact">Zatražite ponudu</a>
+      <button class="hamburger" aria-label="Otvori meni"><i class="fa fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" style="background-image: url('bg_blurred.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <div class="hero-card" role="region" aria-label="DEUS-KOP osnovne informacije">
+          <img src="logo_bager.png" alt="DEUS-KOP logo" class="hero-logo">
+          <h1>DEUS-KOP</h1>
+          <p class="lead">Svi zemljani radovi — iskop kanala za struju, vodovod i kanalizaciju, temelji, bazeni, šahte i septičke jame.</p>
+          <p class="lead">Rušenje manjih objekata · Vađenje korenja · Ravnanje terena i priprema za betoniranje.</p>
+          <p class="lead">Odvoz šuta · Dovoz materijala · Uslužan transport robe.</p>
+          <div class="hero-actions">
+            <a class="phone" href="tel:+381601448720"><i class="fa fa-phone"></i> 060/144-8720</a>
+            <a class="quote" href="#contact">Zatraži ponudu</a>
+          </div>
+        </div>
+        <div class="trusted">
+          <h3>Brzo. Pouzdano. Profesionalno.</h3>
+          <p>Iskustvo u radu sa građevinskim i infrastrukturnim projektima — preciznost i bezbednost na prvom mestu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2 class="section-title">Naše usluge</h2>
+      <div class="services-grid">
+        <article class="service">
+          <i class="fa-solid fa-water"></i>
+          <h3>Iskop kanala</h3>
+          <p>Iskopi za struju, vodovod i kanalizaciju.</p>
+        </article>
+        <article class="service">
+          <i class="fa-solid fa-trowel"></i>
+          <h3>Iskop jama i temelja</h3>
+          <p>Iskop temelja, šahti, bazena i septičkih jama.</p>
+        </article>
+        <article class="service">
+          <i class="fa-solid fa-person-digging"></i>
+          <h3>Rušenje i uklanjanje</h3>
+          <p>Rušenje manjih objekata, sečenje i odvoz materijala, profesionalan pristup i sigurnost.</p>
+        </article>
+        <article class="service">
+          <i class="fa-solid fa-tree"></i>
+          <h3>Vađenje korenja</h3>
+          <p>Efikasno uklanjanje korenja i priprema terena za nove projekte.</p>
+        </article>
+        <article class="service">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Ravnanje terena</h3>
+          <p>Nivelacija i priprema podloga za betoniranje i završne radove.</p>
+        </article>
+        <article class="service">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Transport i odvoz</h3>
+          <p>Odvoz šuta, dovoz materijala i uslužan transport za gradilišta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section pale">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2>Kontaktirajte nas</h2>
+          <p class="contact-intro">Za brz odgovor pozovite, pišite ili pošaljite poruku preko Vibera/WhatsApp-a.</p>
+          <div class="contact-channels">
+            <a class="channel viber" href="viber://chat?number=%2B381601448720" aria-label="Viber"><i class="fa-brands fa-viber"></i></a>
+            <a class="channel whatsapp" href="https://wa.me/381601448720" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="channel phone" href="tel:+381601448720" aria-label="Poziv"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <p class="bigphone">060/144-8720</p>
+          <div class="social-row">
+            <a class="social instagram" href="https://instagram.com/deus_kop" target="_blank"><i class="fa-brands fa-instagram"></i> @deus_kop</a>
+            <a class="social facebook" href="https://www.facebook.com/share/171AK6skYf/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i> Deus Kop</a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="submitForm(event)" novalidate>
+          <h3>Pošaljite upit</h3>
+          <label for="name">Ime</label>
+          <input id="name" name="name" type="text" required minlength="2">
+          <label for="phone">Telefon</label>
+          <input id="phone" name="phone" type="tel" required pattern="\+?\d[\d\s\-/](6,)">
+          <label for="msg">Poruka</label>
+          <textarea id="msg" name="msg" rows="4" required minlength="10"></textarea>
+          <button type="submit" class="submit-btn">Pošalji</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="map" class="section container">
+      <h2 class="section-title">Gde nas možete naći</h2>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11956.123456789!2d20.485!3d45.180!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c8e1b1b2c3d4f%3A0x0000000000000000!2sPerlez!5e0!3m2!1ssr!2srs!4v1699999999999" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> DEUS-KOP — Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
